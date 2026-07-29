@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO.TWEET 2026 | Autonomous Content Engine</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Custom External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex flex-col items-center justify-between p-6 md:p-12">
+
+    <div class="mesh-bg"></div>
+
+    <!-- Header -->
+    <header class="text-center max-w-2xl mt-4 mb-8">
+        <div class="inline-block px-4 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-400 text-xs font-bold mb-3 tracking-widest uppercase">
+            Decoupled Multi-File Architecture
+        </div>
+        <h1 class="text-5xl md:text-6xl font-black mb-3">PRO.TWEET <span class="gradient-text">2026</span></h1>
+        <p class="text-gray-400 text-sm">High-converting viral hooks, frameworks, and takes assembled in real-time.</p>
+    </header>
+
+    <!-- Main Generator Container -->
+    <main class="w-full max-w-5xl grid md:grid-cols-12 gap-8 items-start mb-12">
+        
+        <!-- Controls Column -->
+        <div class="md:col-span-5 glass-card rounded-3xl p-6 space-y-6">
+            
+            <!-- Keyword Input -->
+            <div>
+                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Topic / Niche / Keyword</label>
+                <div class="flex gap-2">
+                    <input type="text" id="keyword" placeholder="e.g., SaaS, AI, Marketing, Solopreneur" 
+                        class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-purple-500 transition">
+                    <button id="random-btn" title="Random Niche" 
+                        class="bg-white/5 border border-white/10 px-4 rounded-xl hover:bg-white/10 transition text-lg">🎲</button>
+                </div>
+            </div>
+
+            <!-- Viral Strategy Selector -->
+            <div>
+                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Content Strategy</label>
+                <select id="strategy" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-purple-500 transition text-gray-200">
+                    <option value="contrarian">🔥 Contrarian Truth / Hot Take</option>
+                    <option value="thread_hook">🧵 High-Converting Thread Hook</option>
+                    <option value="framework">💡 Practical Actionable Framework</option>
+                    <option value="engagement">💬 Viral Reply Trigger / Bait</option>
+                    <option value="wildcard_chaos">⚡ 100% Autonomous Wildcard</option>
+                </select>
+            </div>
+
+            <!-- Generate Button -->
+            <button id="generate-btn" 
+                class="w-full bg-gradient-to-r from-blue-600 to-purple-600 py-4 rounded-xl font-bold text-sm hover:scale-[1.02] active:scale-[0.98] transition transform shadow-lg shadow-purple-500/20">
+                🚀 Synthesize Viral Content
+            </button>
+
+            <!-- Mode Toggles -->
+            <div class="flex items-center justify-between pt-2 border-t border-white/10 text-xs text-gray-400">
+                <span>Multi-Output Mode</span>
+                <button id="multi-mode-btn" class="px-3 py-1 bg-white/10 rounded-lg text-purple-300 font-bold border border-purple-500/30">Single Post</button>
+            </div>
+        </div>
+
+        <!-- Tweet Preview Column -->
+        <div id="output-container" class="md:col-span-7 space-y-4">
+            <!-- Output Cards Will Render Here via app.js -->
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-xs text-gray-600 mb-4">
+        PRO.TWEET 2026 // Async JSON Matrix Engine
+    </footer>
+
+    <!-- Custom External JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
